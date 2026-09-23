@@ -1,0 +1,495 @@
+COMPLETE REQUIREMENTS FOR YOUR MINI PROJECT
+
+SOFTWARE REQUIREMENTS:- 
+
+Programming Languages
+Python 3.9 or higher
+
+HTML, CSS, JavaScript
+
+Python Libraries
+Flask
+
+Flask-CORS
+
+SQLite3 (built into Python)
+
+Frontend Libraries
+Leaflet.js
+
+OpenStreetMap
+
+Development Tools
+VS Code or any code editor
+
+Web browser (Chrome, Firefox, Edge)
+
+Postman (optional, for API testing)
+
+DATASET REQUIREMENTS :-
+
+Primary Dataset (Choose One from Kaggle)
+MWPD + RDD_INDIA_JAPAN
+
+India Road Damage
+
+RDD 2022
+
+Pothole Detection Dataset
+
+Road Damage Dataset: Potholes, Cracks and Manholes
+
+Dataset Contents Needed
+Road images (200-500 images minimum)
+
+Image labels (pothole, crack, manhole, etc.)
+
+Image format: JPG or PNG
+
+Sample Data You Must Create
+20-30 pothole detections (for demo)
+
+GPS coordinates (Bengaluru locations)
+
+Damage types: Pothole, Crack, Manhole, Broken Speed Bump, Rough Road
+
+Severity levels: High, Medium, Low
+
+Confidence scores: 0.70 to 0.95
+
+HARDWARE REQUIREMENTS:-
+For Development
+Laptop/Desktop
+
+Minimum 4 GB RAM (8 GB preferred)
+
+50 GB free storage
+
+Any processor (i3 or equivalent)
+
+For Deployment (Future - Not Now)
+Smartphones (old Android phones with accelerometer + GPS)
+
+Internet connection (for data upload)
+
+Phone mounts (for dashboard installation)
+
+SYSTEM ARCHITECTURE REQUIREMENTS :-
+
+Backend (Flask Server)
+Port: 5000 (default Flask port)
+
+Database: SQLite (local file - potholes.db)
+
+API Endpoints:
+
+GET /api/potholes (fetch all detections)
+
+POST /api/potholes (add new detection)
+
+Optional: DELETE /api/potholes/{id} (remove detection)
+
+Frontend (Web Page)
+Single HTML file (index.html)
+
+Map display: 600-800 pixels height
+
+Map center: Bengaluru (12.9716° N, 77.5946° E)
+
+Map zoom: 12-14 (city level)
+
+Database Schema
+Table name: potholes
+
+Fields:
+
+id (primary key, auto-increment)
+
+latitude (decimal number)
+
+longitude (decimal number)
+
+damage_type (text)
+
+severity (text: High, Medium, Low)
+
+confidence (decimal: 0.0 to 1.0)
+
+image_path (text: filename)
+
+timestamp (date and time)
+
+FUNCTIONAL REQUIREMENTS:-
+
+What Your System MUST Do
+Display interactive map of Bengaluru
+
+Show 20-30 pothole markers on map
+
+Different marker colors for severity (Red=High, Orange=Medium, Yellow=Low)
+
+Click on marker to show popup with details
+
+Display: damage type, severity, confidence, timestamp
+
+Show total detection count
+
+Optional: Filter by damage type and severity
+
+What to SKIP (Future Scope)
+Real-time IMU data processing
+
+Live GPS tracking
+
+Mobile app development
+
+User login/authentication
+
+Image upload from users
+
+Complex AI model training
+
+Cloud deployment
+
+Payment integration
+
+Multiple user roles
+
+DATA REQUIREMENTS:- 
+
+Sample GPS Coordinates (Bengaluru Area)
+Latitude range: 12.9000 to 13.1000
+
+Longitude range: 77.5000 to 77.7000
+
+Example: 12.9716, 77.5946 (MG Road)
+
+Damage Types to Include
+Pothole
+
+Crack (Longitudinal, Transverse, Alligator)
+
+Manhole (Open/Damaged)
+
+Broken Speed Bump
+
+Rough Road
+
+Severity Distribution (for 20-30 detections)
+High: 8-10 detections
+
+Medium: 10-12 detections
+
+Low: 5-8 detections
+
+Confidence Scores
+Range: 0.70 to 0.95
+
+High severity: 0.85 to 0.95
+
+Medium severity: 0.75 to 0.88
+
+Low severity: 0.70 to 0.80
+
+DOCUMENTATION REQUIREMENTS:-
+
+Project Report (Teammates Handle)
+Chapter 1: Introduction
+
+Chapter 2: Literature Survey
+
+Chapter 3: Problem Statement
+
+Chapter 4: System Architecture
+
+Chapter 5: Methodology
+
+Chapter 6: Implementation
+
+Chapter 7: Results and Discussion
+
+Chapter 8: Conclusion and Future Scope
+
+References
+
+Appendix (screenshots)
+
+PPT Presentation (Teammates Handle)
+15-20 slides
+
+Title slide
+
+Problem statement
+
+Existing solutions
+
+Your solution
+
+System architecture
+
+Technologies used
+
+Features
+
+Screenshots
+
+Results
+
+Future scope
+
+Thank you slide
+
+Demo Video (Optional)
+2-3 minutes duration
+
+Show map with markers
+
+Click markers to show details
+
+Show filters
+
+Show statistics
+
+TIMELINE REQUIREMENTS (4-6 Weeks):-
+
+Week 1: Setup
+Install Python and dependencies
+
+Download dataset from Kaggle
+
+Explore dataset structure
+
+Create project folder
+
+Week 2: Backend Development
+Create Flask application
+
+Set up SQLite database
+
+Create API endpoints
+
+Test API
+
+Week 3: Frontend Development
+Create HTML with Leaflet map
+
+Connect to backend API
+
+Display markers
+
+Add popup functionality
+
+Week 4: Data and Testing
+Create 20-30 sample detections
+
+Add Bengaluru GPS coordinates
+
+Test all features
+
+Fix bugs
+
+Week 5: Documentation
+Teammates write report
+
+Create PPT slides
+
+Take screenshots
+
+Prepare demo video
+
+Week 6: Final Preparation
+Final testing
+
+Practice presentation
+
+Print report
+
+Prepare for demo
+
+INTERNET REQUIREMENTS:-
+
+For Development
+Internet needed for:
+
+Downloading Python libraries (pip install)
+
+Downloading dataset from Kaggle
+
+Loading Leaflet.js and OpenStreetMap (CDN)
+
+Research and documentation
+
+For Deployment (Future)
+Mobile data: ₹100-200/month per device
+
+Wi-Fi at bus depots for bulk upload
+
+Cloud hosting (optional)
+
+BUDGET REQUIREMENTS
+Current Mini Project
+Python: Free
+
+Flask: Free
+
+Leaflet.js: Free
+
+OpenStreetMap: Free
+
+SQLite: Free
+
+Dataset: Free (Kaggle)
+
+VS Code: Free
+
+Total: ₹0
+
+Future Deployment (If You Scale)
+Old smartphones: ₹0 (use existing)
+
+Mobile data: ₹100-200/month per device
+
+Phone mounts: ₹200-300 per device
+
+Cloud hosting: ₹500-1000/month (optional)
+
+Total for 10 buses: ₹5,000-10,000 first month
+
+KNOWLEDGE REQUIREMENTS:- 
+What You Need to Know
+Basic Python (functions, lists, dictionaries)
+
+Basic HTML (tags, structure)
+
+Basic JavaScript (functions, fetch API)
+
+Basic SQL (CREATE TABLE, INSERT, SELECT)
+
+REST API concepts (GET, POST requests)
+
+What You DON'T Need
+Advanced machine learning
+
+Complex database design
+
+Mobile app development
+
+Cloud deployment
+
+Advanced cybersecurity
+
+Payment integration
+
+DELIVERABLES
+Must Submit
+Working Prototype
+
+Flask backend on localhost:5000
+
+HTML page with map and markers
+
+20-30 sample detections
+
+All features working
+
+Project Report
+
+40-50 pages
+
+Printed and bound
+
+All chapters complete
+
+PPT Presentation
+
+15-20 slides
+
+Professional design
+
+Live Demo
+
+Demonstrate all features
+
+Answer questions
+
+Optional
+Demo video (2-3 minutes)
+
+GitHub repository
+
+Poster presentation
+
+SUCCESS CRITERIA
+Your Project Succeeds If:
+✅ Web page displays Bengaluru map
+✅ Map shows 20-30 pothole markers
+✅ Clicking markers shows details
+✅ Backend API works correctly
+✅ Database stores and retrieves data
+✅ All features demonstrated smoothly
+✅ Report and PPT complete
+✅ You can explain system clearly
+
+Your Project Fails If:
+❌ Map doesn't load
+❌ Markers don't appear
+❌ Backend crashes
+❌ Database errors
+❌ Features don't work during demo
+❌ Report or PPT incomplete
+
+RISK MANAGEMENT :-
+
+Potential Risks and Solutions
+Risk 1: Dataset download fails
+
+Solution: Use alternative Kaggle dataset
+
+Backup: Use road images from internet
+
+Risk 2: Flask backend has errors
+
+Solution: Check errors, search Stack Overflow
+
+Backup: Hardcode data in HTML
+
+Risk 3: Map doesn't load
+
+Solution: Check internet (Leaflet needs CDN)
+
+Backup: Use static map image
+
+Risk 4: Not enough time
+
+Solution: Reduce features, focus on core
+
+Backup: Show screenshots instead of live demo
+
+Risk 5: Team coordination issues
+
+Solution: Regular meetings, clear tasks
+
+Backup: You code, they document
+
+STARTUP CHECKLIST
+Before you start coding, ensure:
+
+Python 3.9+ installed
+
+VS Code or editor installed
+
+Internet connection available
+
+Kaggle account created
+
+Dataset downloaded (or plan to)
+
+Project folder created
+
+Team roles assigned (you = code, others = report/PPT)
+
+Timeline planned (4-6 weeks)
+
+Budget confirmed (₹0 for now)
+
+
